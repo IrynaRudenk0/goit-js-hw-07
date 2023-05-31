@@ -9,7 +9,7 @@ function makeGallery(items) {
       class="gallery__image"
       src=${preview}
       data-source=${original}
-      alt=${decription}
+      alt=${description}
     />
   </a>
 </li>`
