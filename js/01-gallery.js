@@ -5,7 +5,7 @@ import { galleryItems } from './gallery-items.js';
 console.log(galleryItems);
 
 function makeGallery(items) {
-  return galleryItems.map({preview, original, description} => 
+  return galleryItems.map({preview, original, description}) => 
       `<li class="gallery__item">
   <a class="gallery__link" href=${original}>
     <img
