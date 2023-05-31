@@ -1,12 +1,9 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-
-console.log(galleryItems);
-
 function makeGallery(items) {
-  return galleryItems.map({preview, original, description}) => 
-      `<li class="gallery__item">
+  return galleryItems.map(({ preview, original, description }) =>
+    `<li class="gallery__item">
   <a class="gallery__link" href=${original}>
     <img
       class="gallery__image"
@@ -16,8 +13,9 @@ function makeGallery(items) {
     />
   </a>
 </li>`
-    )
-    .join("")
+  )
+      .join("")
+
   }
 const galleryList = document.querySelector('.gallery');
 const galleryCards = makeGallery(galleryItems);
