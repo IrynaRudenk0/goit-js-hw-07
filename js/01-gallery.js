@@ -33,11 +33,11 @@ function onPictureClick(event) {
 
     const bigPictureLink = event.target.dataset.source;
     
-    onModalOpen (bigPictureLink);
+    modalOpen (bigPictureLink);
     }
 
 
-function onModalOpen(url) {
+function modalOpen(url) {
     const closeModal = event => {
     if (event.code === 'Escape') { bigImage.close(); }
 };
